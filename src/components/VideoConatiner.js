@@ -14,7 +14,7 @@ const VideoConatiner = () => {
     setvideos(json.items)
   }
   return (
-    <div className='flex h-full flex-wrap overflow-y-auto'>
+    <div className='flex h-full w-full flex-wrap overflow-y-auto'>
       {videos.map((video)=>(
         <Link to={"/watch?v="+video.id}>
         <VideoCard key={video.id} info={video}/>
